@@ -3,7 +3,7 @@ name: Guide deploy
 on:
   # trigger deployment on every push to main branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   # trigger deployment manually
   workflow_dispatch:
 
