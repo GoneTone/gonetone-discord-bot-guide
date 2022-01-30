@@ -1,0 +1,23 @@
+{
+  "name": "gonetone-discord-bot-guide",
+  "description": "GoneTone Discord Bot 指南",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "guide:dev": "vuepress dev guide",
+    "guide:build": "vuepress build guide",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/GoneTone/gonetone-discord-bot-guide.git",
+  "author": "張文相 Wenxiang Zhang (旋風之音 GoneTone)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoneTone/gonetone-discord-bot-guide/issues"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.24"
+  },
+  "dependencies": {
+    "@discord-message-components/vue": "^0.2.1"
+  }
+}
