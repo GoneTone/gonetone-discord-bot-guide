@@ -5,7 +5,7 @@ import sidebar from './sidebar';
 
 export default defineUserConfig<DefaultThemeOptions>({
     // site config
-    base: '/',
+    base: '/gonetone-discord-bot-guide/',
     lang: 'zh-TW',
     title: 'GoneTone Discord Bot 指南',
     description: 'GoneTone Discord Bot 指南',
