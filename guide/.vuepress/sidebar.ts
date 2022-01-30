@@ -3,7 +3,8 @@ export default {
         {
             text: '首頁',
             children: [
-                '/'
+                '/',
+                '/permissions.md'
             ]
         },
         {
