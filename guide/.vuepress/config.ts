@@ -37,6 +37,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         editLinkText: '在 GitHub 上編輯此頁面',
         lastUpdated: true,
         lastUpdatedText: '最後更新',
+        contributors: true,
         contributorsText: '貢獻者',
         backToHome: '回到首頁',
         openInNewWindow: '在新視窗中開啟',
