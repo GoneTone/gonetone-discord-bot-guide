@@ -33,7 +33,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         docsBranch: 'master',
         docsDir: 'guide',
         editLinks: true,
-        editLinkPattern: ':repo/-/edit/:branch/:path',
+        editLinkPattern: ':repo/edit/:branch/:path',
         editLinkText: '在 GitHub 上編輯此頁面',
         lastUpdated: true,
         lastUpdatedText: '最後更新',
