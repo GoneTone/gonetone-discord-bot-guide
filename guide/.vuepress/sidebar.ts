@@ -26,6 +26,7 @@ export default {
             text: '群組',
             children: [
                 '/guild/',
+                '/guild/deletemessages.md',
                 '/guild/member.md'
             ]
         },
