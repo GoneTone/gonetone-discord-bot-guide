@@ -13,12 +13,12 @@
 :::: code-group
 ::: code-group-item 格式
 ```text:no-line-numbers
-/bot sendmsg guildsowner [message]
+/bot sendmsg toallguildowner [message]
 ```
 :::
 ::: code-group-item 範例
 ```text:no-line-numbers
-/bot sendmsg guildsowner 這是一個範例訊息
+/bot sendmsg toallguildowner 這是一個範例訊息
 ```
 :::
 ::::
