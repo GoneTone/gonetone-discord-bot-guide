@@ -1,7 +1,7 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
+import {defineUserConfig} from 'vuepress'
+import type {DefaultThemeOptions} from 'vuepress'
 
-import sidebar from './sidebar';
+import sidebar from './sidebar'
 
 export default defineUserConfig<DefaultThemeOptions>({
     // site config
@@ -12,14 +12,29 @@ export default defineUserConfig<DefaultThemeOptions>({
     head: [
         ['meta', { charset: 'utf-8' }],
         ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/icos/favicon.ico' }],
         ['meta', { name: 'theme-color', content: '#22272e' }],
-        ['meta', { name: 'twitter:card', content: 'summary' }],
-        ['meta', { property: 'og:title', content: 'GoneTone Discord Bot 指南' }],
+        ['link', { rel: 'shortcut icon', href: 'https://api.reh.tw/images/gonetone/icos/favicon.ico' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-16x16.png', sizes: '16x16' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-32x32.png', sizes: '32x32' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-64x64.png', sizes: '64x64' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-64x64.png', sizes: '64x64' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-128x128.png', sizes: '128x128' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-192x192.png', sizes: '192x192' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png', sizes: '256x256' }],
+        ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-512x512.png', sizes: '512x512' }],
+        ['link', { rel: 'apple-touch-icon-precomposed', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
+        ['link', { rel: 'image_src', type: 'image/png', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
+        ['meta', { name: 'msapplication-TileImage', content: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
+        ['meta', { property: 'og:site_name', content: 'GoneTone Discord Bot 指南' }],
         ['meta', { property: 'og:description', content: 'GoneTone Discord Bot 指南' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'zh_TW' }],
-        ['meta', { property: 'og:image', content: 'https://api.reh.tw/images/gonetone/character/character-head.png' }],
+        ['meta', { property: 'og:image', content: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png' }],
+        ['meta', { property: 'og:image:width', content: '256' }],
+        ['meta', { property: 'og:image:height', content: '256' }],
+        ['meta', { name: 'twitter:card', content: 'summary' }],
+        ['meta', { name: 'twitter:description', content: 'GoneTone Discord Bot 指南' }],
+        ['meta', { name: 'twitter:image', content: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png' }]
     ],
 
     // theme and its config
@@ -46,5 +61,5 @@ export default defineUserConfig<DefaultThemeOptions>({
         tip: '提示',
         warning: '注意',
         danger: '警告'
-    },
+    }
 })
