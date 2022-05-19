@@ -14,20 +14,12 @@
 :::: code-group
 ::: code-group-item 格式
 ```text:no-line-numbers
-/minecraft server [ip] [port]
-```
-:::
-::: code-group-item 範例
-```text:no-line-numbers
-/minecraft server mc.hypixel.net 25565
+/minecraft server
 ```
 :::
 ::::
 
-| 參數名稱 | 類型      | 說明     | 必要  |
-|------|---------|--------|:---:|
-| ip   | String  | 伺服器 IP |  V  |
-| port | Integer | 伺服器端口  |  V  |
+![](../.vuepress/public/game/minecraft/server_modal.png)
 
 ### 結果
 
@@ -44,19 +36,12 @@
 :::: code-group
 ::: code-group-item 格式
 ```text:no-line-numbers
-/minecraft skin [name]
-```
-:::
-::: code-group-item 範例
-```text:no-line-numbers
-/minecraft skin GoneTone
+/minecraft skin
 ```
 :::
 ::::
 
-| 參數名稱 | 類型     | 說明                          | 必要  |
-|------|--------|-----------------------------|:---:|
-| name | String | Minecraft Java Edition 帳號暱稱 |  V  |
+![](../.vuepress/public/game/minecraft/skin_modal.png)
 
 ### 結果
 
