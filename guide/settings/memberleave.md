@@ -44,23 +44,22 @@
 :::: code-group
 ::: code-group-item 格式
 ```text:no-line-numbers
-/settings memberleave setmessage [message]
-```
-:::
-::: code-group-item 範例
-```text:no-line-numbers
-/settings memberleave setmessage 成員 {member} 離開了群組...
+/settings memberleave set
 ```
 :::
 ::::
 
-| 參數名稱    | 類型     | 說明                                                                   | 必要  |
-|---------|--------|----------------------------------------------------------------------|:---:|
-| message | String | 成員封鎖訊息<br><br>可插入符號：<br>`\n` 換行<br>`{member}` 成員名稱<br>`{guild}` 群組名稱 |  V  |
+::: tip
+訊息可插入符號：
+- `{member}` 成員名稱
+- `{guild}` 群組名稱
+:::
+
+![](../.vuepress/public/settings/memberleave/set_modal.png)
 
 ### 結果
 
-![](../.vuepress/public/settings/memberleave/setmessage.png)
+![](../.vuepress/public/settings/memberleave/set.png)
 
 ## 設定成員離開訊息是否開啟
 
