@@ -19,7 +19,8 @@ export default {
             text: '遊戲',
             children: [
                 '/game/',
-                '/game/minecraft.md'
+                '/game/minecraft.md',
+                '/game/genshin.md'
             ]
         },
         {
