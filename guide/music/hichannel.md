@@ -1,8 +1,8 @@
-# HiNet hichannel 台灣電台
+# HiNet HiChannel 台灣電台
 
 [[toc]]
 
-## 播放電台
+## 播放 HiChannel 電台
 
 ### 指令
 
@@ -26,7 +26,7 @@
 
 | 參數名稱  | 類型     | 說明   | 必要  |
 |-------|--------|------|:---:|
-| radio | String | 選擇電台 |  V  |
+| radio | String | 電台名稱 |  V  |
 
 ### 結果
 
