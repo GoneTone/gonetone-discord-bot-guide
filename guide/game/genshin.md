@@ -65,3 +65,19 @@
 | 參數名稱 | 類型     | 說明      | 必要  |
 |------|--------|---------|:---:|
 | name | String | 聖遺物套裝名稱 |  V  |
+
+## 查詢原神版本資訊
+
+### 指令
+
+:::: code-group
+::: code-group-item 格式
+```text:no-line-numbers
+/genshin version
+```
+:::
+::::
+
+### 結果
+
+![](../.vuepress/public/game/genshin/version.png)
