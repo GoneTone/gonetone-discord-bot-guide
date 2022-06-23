@@ -24,17 +24,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-512x512.png', sizes: '512x512' }],
         ['link', { rel: 'apple-touch-icon-precomposed', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
         ['link', { rel: 'image_src', type: 'image/png', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
-        ['meta', { name: 'msapplication-TileImage', content: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
-        ['meta', { property: 'og:site_name', content: 'GoneTone Discord Bot 指南' }],
-        ['meta', { property: 'og:description', content: '由 旋風之音 GoneTone 所開發的 Discord 機器人。' }],
-        ['meta', { property: 'og:type', content: 'website' }],
-        ['meta', { property: 'og:locale', content: 'zh_TW' }],
-        ['meta', { property: 'og:image', content: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png' }],
-        ['meta', { property: 'og:image:width', content: '256' }],
-        ['meta', { property: 'og:image:height', content: '256' }],
-        ['meta', { name: 'twitter:card', content: 'summary' }],
-        ['meta', { name: 'twitter:description', content: '由 旋風之音 GoneTone 所開發的 Discord 機器人。' }],
-        ['meta', { name: 'twitter:image', content: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png' }]
+        ['meta', { name: 'msapplication-TileImage', content: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }]
     ],
 
     // theme and its config
@@ -61,5 +51,30 @@ export default defineUserConfig<DefaultThemeOptions>({
         tip: '提示',
         warning: '注意',
         danger: '警告'
-    }
+    },
+
+    // plugins config
+    plugins: [
+        [
+            'vuepress-plugin-seo',
+            {
+                siteTitle: (_, $site) => $site.title,
+                title: ($page, $site) => `${$page.title} | ${$site.title}`,
+                description: ($page, $site) => $page.frontmatter.description || $site.description,
+                author: (_) => '旋風之音 GoneTone',
+                tags: $page => $page.frontmatter.tags,
+                twitterCard: _ => 'summary',
+                type: _ => 'website',
+                url: (_, $site, path) => `${$site.themeConfig.domain || ''}${path}`,
+                image: (_) => 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png',
+                publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+                modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+                customMeta: (add) => {
+                    add('og:locale', 'zh_TW', 'property')
+                    add('og:image:width', '256', 'property')
+                    add('og:image:height', '256', 'property')
+                }
+            }
+        ]
+    ]
 })
