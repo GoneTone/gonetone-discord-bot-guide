@@ -30,6 +30,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     // theme and its config
     theme: '@vuepress/theme-default',
     themeConfig: {
+        domain: 'https://gonetone.github.io/gonetone-discord-bot-guide',
         logo: 'https://api.reh.tw/images/gonetone/character/character-head.png',
         sidebar,
         sidebarDepth: 3,
