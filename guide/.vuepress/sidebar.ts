@@ -4,7 +4,9 @@ export default {
             text: '首頁',
             children: [
                 '/',
-                '/permissions.md'
+                '/permissions.md',
+                '/invite.md',
+                '/help.md'
             ]
         },
         {
