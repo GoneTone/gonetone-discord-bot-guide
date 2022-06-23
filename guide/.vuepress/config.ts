@@ -8,7 +8,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     base: '/gonetone-discord-bot-guide/',
     lang: 'zh-TW',
     title: 'GoneTone Discord Bot 指南',
-    description: 'GoneTone Discord Bot 指南',
+    description: '由 旋風之音 GoneTone 所開發的 Discord 機器人。',
     head: [
         ['meta', { charset: 'utf-8' }],
         ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
@@ -26,14 +26,14 @@ export default defineUserConfig<DefaultThemeOptions>({
         ['link', { rel: 'image_src', type: 'image/png', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
         ['meta', { name: 'msapplication-TileImage', content: 'https://api.reh.tw/images/gonetone/logos/icons/icon-256x256.png' }],
         ['meta', { property: 'og:site_name', content: 'GoneTone Discord Bot 指南' }],
-        ['meta', { property: 'og:description', content: 'GoneTone Discord Bot 指南' }],
+        ['meta', { property: 'og:description', content: '由 旋風之音 GoneTone 所開發的 Discord 機器人。' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'zh_TW' }],
         ['meta', { property: 'og:image', content: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png' }],
         ['meta', { property: 'og:image:width', content: '256' }],
         ['meta', { property: 'og:image:height', content: '256' }],
         ['meta', { name: 'twitter:card', content: 'summary' }],
-        ['meta', { name: 'twitter:description', content: 'GoneTone Discord Bot 指南' }],
+        ['meta', { name: 'twitter:description', content: '由 旋風之音 GoneTone 所開發的 Discord 機器人。' }],
         ['meta', { name: 'twitter:image', content: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png' }]
     ],
 
