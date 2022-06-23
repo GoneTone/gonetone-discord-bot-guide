@@ -14,4 +14,4 @@
 
 ### 結果
 
-![](.vuepress/public/help.png)
+![](./.vuepress/public/help.png)
