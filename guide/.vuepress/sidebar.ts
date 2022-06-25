@@ -51,7 +51,6 @@ export default {
             text: '設定',
             children: [
                 '/settings/',
-                '/settings/guildadminrole.md',
                 '/settings/guildlog.md',
                 '/settings/memberban.md',
                 '/settings/memberjoin.md',
