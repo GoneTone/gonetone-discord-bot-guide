@@ -64,6 +64,13 @@ export default {
                 '/tools/',
                 '/tools/translate.md'
             ]
+        },
+        {
+            text: '其他',
+            children: [
+                '/others/',
+                '/others/stopworkingquery.md'
+            ]
         }
     ]
 }
