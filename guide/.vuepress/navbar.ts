@@ -1,9 +1,5 @@
 export default [
     {
-        text: '官網',
-        link: 'https://blog.reh.tw/',
-    },
-    {
         text: 'Discord 群組',
         link: 'https://discord.reh.tw/',
     },
@@ -14,6 +10,10 @@ export default [
     {
         text: '關於開發者',
         children: [
+            {
+                text: '網站',
+                link: 'https://blog.reh.tw/',
+            },
             {
                 text: 'Facebook 個人頁面',
                 link: 'https://www.facebook.com/GoneToneDY',
