@@ -1,6 +1,7 @@
 import {defineUserConfig} from 'vuepress'
 import type {DefaultThemeOptions} from 'vuepress'
 
+import navbar from './navbar'
 import sidebar from './sidebar'
 
 export default defineUserConfig<DefaultThemeOptions>({
@@ -32,6 +33,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     themeConfig: {
         domain: 'https://gonetone.github.io/gonetone-discord-bot-guide',
         logo: 'https://api.reh.tw/images/gonetone/character/character-head.png',
+        navbar,
         sidebar,
         sidebarDepth: 3,
         repo: 'https://github.com/GoneTone/gonetone-discord-bot-guide',
