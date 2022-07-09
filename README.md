@@ -1,4 +1,4 @@
-# 介紹
+# GoneTone Discord Bot 指南
 
 **GoneTone Bot** 是一隻由台灣開發者 [旋風之音 GoneTone](https://blog.reh.tw/) 所開發的 [Discord](https://discord.com/) 機器人。
 
