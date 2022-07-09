@@ -7,7 +7,8 @@ export default {
                 '/permissions.md',
                 '/invite.md',
                 '/help.md',
-                '/about.md'
+                '/about.md',
+                '/faq.md'
             ]
         },
         {
