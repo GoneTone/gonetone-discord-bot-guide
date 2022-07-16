@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## 指令
+### 指令
 
 :::: code-group
 ::: code-group-item 格式
