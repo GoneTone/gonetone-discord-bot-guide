@@ -29,4 +29,6 @@
 
 ### 結果
 
-![](../.vuepress/public/others/embedapp/embedapp.png)
+![](../.vuepress/public/others/embedapp/embedapp_1.png)
+
+![](../.vuepress/public/others/embedapp/embedapp_2.png)
