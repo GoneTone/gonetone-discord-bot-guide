@@ -30,6 +30,10 @@ jobs:
       # run build script
       - name: Build VuePress site
         run: npm run guide:build
+        env:
+          NODE_ENV: 'production'
+          ALGOLIA_DOCSEARCH_APP_ID: ${{ secrets.ALGOLIA_DOCSEARCH_APP_ID }}
+          ALGOLIA_DOCSEARCH_API_KEY: ${{ secrets.ALGOLIA_DOCSEARCH_API_KEY }}
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
