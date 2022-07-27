@@ -1,4 +1,6 @@
-export default {
+import type { SidebarConfig } from 'vuepress'
+
+const sidebar: SidebarConfig = {
     '/': [
         {
             text: '首頁',
@@ -77,3 +79,5 @@ export default {
         }
     ]
 }
+
+export default sidebar

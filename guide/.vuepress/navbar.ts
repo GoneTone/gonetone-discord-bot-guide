@@ -1,4 +1,6 @@
-export default [
+import type { NavbarConfig } from 'vuepress'
+
+const navbar: NavbarConfig = [
     {
         text: 'Discord 群組',
         link: 'https://discord.reh.tw/',
@@ -33,3 +35,5 @@ export default [
         ]
     }
 ]
+
+export default navbar
