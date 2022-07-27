@@ -1,26 +1,32 @@
-import seo from 'vuepress-plugin-seo'
+import { seoPlugin } from 'vuepress-plugin-seo2'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import type { PluginConfig } from 'vuepress'
 
 const { ALGOLIA_DOCSEARCH_API_KEY, ALGOLIA_DOCSEARCH_APP_ID, NODE_ENV } = process.env
 
 const plugins: PluginConfig = [
-    seo({
-        siteTitle: (_, $site) => $site.title,
-        title: ($page, $site) => `${$page.title} | ${$site.title}`,
-        description: ($page, $site) => $page.frontmatter.description || $site.description,
-        author: (_) => '旋風之音 GoneTone',
-        tags: $page => $page.frontmatter.tags,
-        twitterCard: _ => 'summary',
-        type: _ => 'website',
-        url: (_, $site, path) => `${$site.themeConfig.domain || ''}${path}`,
-        image: (_) => 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png',
-        publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
-        modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
-        customMeta: (add) => {
-            add('og:locale', 'zh_TW', 'property')
-            add('og:image:width', '256', 'property')
-            add('og:image:height', '256', 'property')
+    seoPlugin({
+        hostname: 'https://gonetone.github.io',
+        author: {
+            name: '旋風之音 GoneTone',
+            url: 'https://blog.reh.tw'
+        },
+        fallBackImage: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png',
+        twitterID: 'TPGoneTone',
+        ogp: (ogp, page, app) => {
+            return {
+                'og:description': ogp['og:description'] || app.siteData.description,
+                'og:image': 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png',
+                'og:locale': app.siteData.lang.replace('-', '_'),
+                'og:locale:alternate': ogp['og:locale:alternate'],
+                'og:site_name': app.siteData.title,
+                'og:title': `${page.title} | ${app.siteData.title}`,
+                'og:type': ogp['og:type'],
+                'og:url': ogp['og:url'],
+                'og:image:width': '256',
+                'og:image:height': '256',
+                'twitter:card': 'summary'
+            }
         }
     })
 ]

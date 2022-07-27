@@ -12,7 +12,6 @@ const config = defineUserConfig({
     description: '由 旋風之音 GoneTone 所開發的 Discord 機器人。',
     head: [
         ['meta', { charset: 'utf-8' }],
-        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
         ['meta', { name: 'theme-color', content: '#22272e' }],
         ['link', { rel: 'shortcut icon', href: 'https://api.reh.tw/images/gonetone/icos/favicon.ico' }],
         ['link', { rel: 'icon', href: 'https://api.reh.tw/images/gonetone/logos/icons/icon-16x16.png', sizes: '16x16' }],
