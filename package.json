@@ -6,6 +6,8 @@
   "scripts": {
     "guide:dev": "vuepress dev guide",
     "guide:build": "vuepress build guide",
+    "lint": "eslint . --ext ts,vue",
+    "lint:fix": "eslint . --ext ts,vue --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/GoneTone/gonetone-discord-bot-guide.git",
@@ -15,7 +17,15 @@
     "url": "https://github.com/GoneTone/gonetone-discord-bot-guide/issues"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
     "@vuepress/plugin-docsearch": "^2.0.0-beta.49",
+    "eslint": "^8.20.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.3.0",
     "vuepress": "^2.0.0-beta.49",
     "vuepress-plugin-seo2": "^2.0.0-beta.87"
   },
