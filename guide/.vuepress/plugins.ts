@@ -14,19 +14,17 @@ const plugins: PluginConfig = [
     fallBackImage: 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png',
     twitterID: 'TPGoneTone',
     ogp: (ogp, page, app) => {
-      return {
-        'og:description': ogp['og:description'] || app.siteData.description,
-        'og:image': 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png',
-        'og:locale': app.siteData.lang.replace('-', '_'),
-        'og:locale:alternate': ogp['og:locale:alternate'],
-        'og:site_name': app.siteData.title,
-        'og:title': `${page.title} | ${app.siteData.title}`,
-        'og:type': ogp['og:type'],
-        'og:url': ogp['og:url'],
-        'og:image:width': '256',
-        'og:image:height': '256',
-        'twitter:card': 'summary'
-      }
+      ogp['og:site_name'] = app.siteData.title
+      ogp['og:description'] = ogp['og:description'] || app.siteData.description
+      ogp['og:title'] = `${page.title} | ${app.siteData.title}`
+      ogp['og:locale'] = app.siteData.lang.replace('-', '_')
+      ogp['og:image'] = 'https://api.reh.tw/images/gonetone/character/character-head-256x256.png'
+      ogp['og:image:width'] = '256'
+      ogp['og:image:height'] = '256'
+
+      ogp['twitter:card'] = 'summary'
+
+      return ogp
     }
   })
 ]
