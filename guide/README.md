@@ -5,6 +5,8 @@
 - 查看機器人指南：<https://gonetone.github.io/gonetone-discord-bot-guide/>
 - 回報問題/功能請求：<https://github.com/GoneTone/gonetone-discord-bot-guide/issues>
 
+<a href="https://gonetone.github.io/gonetone-discord-bot-guide/invite.html"><img src="./.vuepress/public/discord-invite-bot.svg" width="300" alt="邀請 Discord 機器人" /></a>
+
 ## 連結
 
 - [Discord 群組](https://discord.reh.tw/)
