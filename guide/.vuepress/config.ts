@@ -10,7 +10,7 @@ const config = defineUserConfig({
   base: '/gonetone-discord-bot-guide/',
   lang: 'zh-TW',
   title: 'GoneTone Discord Bot 指南',
-  description: '由 旋風之音 GoneTone 所開發的 Discord 機器人。',
+  description: 'GoneTone Bot 是一隻由台灣開發者 旋風之音 GoneTone 所開發的 Discord 機器人。',
   head: [
     ['meta', { charset: 'utf-8' }],
     ['meta', { name: 'theme-color', content: '#22272e' }],
