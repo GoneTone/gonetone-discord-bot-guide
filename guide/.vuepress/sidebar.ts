@@ -10,7 +10,8 @@ const sidebar: SidebarConfig = {
         '/invite.md',
         '/help.md',
         '/about.md',
-        '/faq.md'
+        '/faq.md',
+        '/changelog.md'
       ]
     },
     {

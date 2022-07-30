@@ -4,7 +4,7 @@
 
 ## 邀請網址
 
-正式上線後更新。
+<https://discord.com/api/oauth2/authorize?client_id=434386322518704128&scope=bot+applications.commands&permissions=441307360727>
 
 ## 指令
 
