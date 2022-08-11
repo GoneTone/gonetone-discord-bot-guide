@@ -73,6 +73,7 @@ const sidebar: SidebarConfig = {
       text: '其他',
       children: [
         '/others/',
+        '/others/ping.md',
         '/others/embedapp.md'
       ]
     }
