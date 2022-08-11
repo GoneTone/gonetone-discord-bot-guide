@@ -30,7 +30,7 @@ const config = defineUserConfig({
 
   // theme and its config
   theme: defaultTheme({
-    home: '/gonetone-discord-bot-guide/',
+    home: '/',
     logo: 'https://api.reh.tw/images/gonetone/character/character-head.png',
     navbar,
     sidebar,
