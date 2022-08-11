@@ -41,7 +41,8 @@ const sidebar: SidebarConfig = {
     {
       text: '音樂',
       children: [
-        '/music/'
+        '/music/',
+        '/music/music.md'
       ]
     },
     {
