@@ -21,6 +21,7 @@
 - 新增依賴項 [ping](https://www.npmjs.com/package/ping)
 - 新增依賴項 [discord-player](https://www.npmjs.com/package/discord-player)
 - 新增依賴項 [play-dl](https://www.npmjs.com/package/play-dl)
+- 移除依賴項 [hinet-hichannel-taiwan-radio](https://www.npmjs.com/package/hinet-hichannel-taiwan-radio)
 
 ## v3.0.0 (2022/07/30)
 ### 新功能
