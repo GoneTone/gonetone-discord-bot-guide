@@ -10,11 +10,6 @@
 /ping
 ```
 :::
-::: code-group-item 範例
-```text:no-line-numbers
-/ping
-```
-:::
 ::::
 
 ### 結果
