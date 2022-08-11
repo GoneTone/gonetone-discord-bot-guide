@@ -74,8 +74,7 @@ const sidebar: SidebarConfig = {
       text: '其他',
       children: [
         '/others/',
-        '/others/embedapp.md',
-        '/others/stopworkingquery.md'
+        '/others/embedapp.md'
       ]
     }
   ]
