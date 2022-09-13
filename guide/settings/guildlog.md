@@ -82,3 +82,7 @@
 ### 結果
 
 ![](../.vuepress/public/settings/guildlog/query.png)
+
+## 群組日誌 Demo
+
+![](../.vuepress/public/settings/guildlog/demo.png)
